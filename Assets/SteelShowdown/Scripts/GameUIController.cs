@@ -10,8 +10,6 @@ public class GameUIController : MonoBehaviour
     [SerializeField]
     private Text playerNameText;
     [SerializeField]
-    //private Slider healthbar;
-    // Start is called before the first frame update
     TankController target;
     Transform targetTransform;
     Renderer targetRenderer;
