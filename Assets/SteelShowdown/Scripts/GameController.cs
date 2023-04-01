@@ -31,7 +31,9 @@ public class GameController : MonoBehaviour
             }
             else
             {
-
+                 // Set the new position for the player
+                Vector3 newPosition = new Vector3(x, y, z);
+                TankController.LocalPlayerInstance.transform.position = newPosition;
       
             }
 
