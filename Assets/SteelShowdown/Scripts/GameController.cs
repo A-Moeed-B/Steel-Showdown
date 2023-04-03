@@ -14,7 +14,7 @@ public class GameController : MonoBehaviour
     {
         Instance = this;
         if (playerPrefab == null)
-        { // #Tip Never assume public properties of Components are filled up properly, always check and inform the developer of it.
+        {
 
             Debug.LogError("<Color=Red><b>Missing</b></Color> playerPrefab Reference. Please set it up in GameObject 'Game Manager'", this);
         }
