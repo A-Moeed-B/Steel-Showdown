@@ -30,6 +30,7 @@ public class Bullet : MonoBehaviour
             GameObject.Find("GameController").GetComponent<GameController>().respawn(collision.gameObject.GetComponent<PhotonView>().ViewID);
             if(collision.gameObject!=parent)
               parent.increaseScore();
+            parent = null;
             PhotonNetwork.Destroy(gameObject);
             return;
         }
